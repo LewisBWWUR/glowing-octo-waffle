@@ -19,7 +19,7 @@
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-hash/0.2.1/leaflet-hash.js"></script>
 			<script>
 			  //initialize the map         
-			  var map = L.map('map').setView([53.3500,-2.1500 ], 9);
+			  var map = L.map('map').setView([53.3500,-2.1500 ], 10);
 
 			  //Create baselayer - tiles         
 			  var backgroundMap = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png',{
@@ -33,24 +33,28 @@
 			  // Hash in URL
 			  var hash = new L.Hash(map);
 			  
-			  var Home = L.marker([53.3697, -2.3387]).addTo(map);
-			  var popup = "My home";
+			  var Home = L.marker([53.37029, -2.338794]).addTo(map);
+			  var popup = "Home";
 				Home.bindPopup(popup);
 				
-				var JP = L.marker([53, -2.3]).addTo(map);
+				var JP = L.marker([53.423959, -2.317629]).addTo(map);
 			  var popup = "The JP Joule";
 				JP.bindPopup(popup);
 				
-				var Unicorn = L.marker([53, -2.3]).addTo(map);
+				var Unicorn = L.marker([53.384273, -2.35202]).addTo(map);
 			  var popup = "The Unicorn";
 				Unicorn.bindPopup(popup);
 				
-				var Railway = L.marker([53, -2.3]).addTo(map);
+				var Railway = L.marker([53.378428, -2.348533]).addTo(map);
 			  var popup = "The railway";
 				Railway.bindPopup(popup);
+				
+				var FortyTwo = L.marker([53.478397, -2.249043]).addTo(map);
+			  var popup = "42nd Street";
+				FortyTwo.bindPopup(popup);
 			</script>
 			
-			<p> tester paragraph </p>
+			<p> Night out calculator </p>
 		</body>
 		
 </html> 
